@@ -1,0 +1,60 @@
+/* Updated CSS styles for AI Function Selector */
+
+/* Overall selector styling */
+.ai-function-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f9f9f9; /* Slightly off-white background for better contrast */
+  padding: 20px; /* Add padding around the container */
+}
+
+/* Header styling */
+h1 {
+  margin-bottom: 2rem;
+  color: #333; /* Dark text for visibility */
+  font-size: 2.5rem; /* Larger font size for the title */
+  text-align: center;
+}
+
+/* Button container styling */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem; /* Increased gap between buttons */
+  max-width: 600px;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Individual button styling */
+.ai-function-button {
+  padding: 1.2rem 2.4rem; /* Slightly larger padding for a better click target */
+  font-size: 1.1rem; /* Slightly larger font size */
+  color: white;
+  background-color: #4CAF50; /* Green background for a positive action */
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+/* Hover effect for buttons */
+.ai-function-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+  .button-container {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+  }
+}
